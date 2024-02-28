@@ -4,7 +4,7 @@
 int main(void) {
   initscr();
 
-  box(stdscr, '*', '*');
+  box(stdscr, '|', '-');
   refresh();
   getch();
 
