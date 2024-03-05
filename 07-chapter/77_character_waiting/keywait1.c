@@ -11,7 +11,7 @@ int main(void) {
 
   nodelay(stdscr, TRUE);
   addstr("Press any key to stop the insane loop!\n");
-  while (getch() == ERR) {
+  while (getch() != ' ') {
     printw("%d\r", value++);
     refresh();
   }
