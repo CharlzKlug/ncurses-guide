@@ -9,7 +9,8 @@ int main(void) {
 
   initscr();
   start_color();
-  init_pair(1, COLOR_BLACK, COLOR_BLUE);
+  NCURSES_COLOR_T my_color= COLOR_BLACK;
+  init_pair(1, my_color, COLOR_BLUE);
   init_pair(2, COLOR_BLACK, COLOR_RED);
   init_pair(3, COLOR_BLACK, COLOR_GREEN);
   init_pair(4, COLOR_BLACK, COLOR_CYAN);
