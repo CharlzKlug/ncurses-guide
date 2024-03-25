@@ -19,6 +19,8 @@ int main(void) {
     return(1);
   }
 
+  scrollok(lister, true);
+  
   text= fopen(FILENAME,  "r");
   if (text == NULL) {
     addstr("unable to open file\n");
