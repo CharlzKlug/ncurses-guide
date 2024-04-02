@@ -16,7 +16,7 @@ int main(void) {
   }
 
   addstr("New pad created");
-  refresh();
+  prefresh(p, 0, 0, 0, 0, 1, 15);
   getch();
   
   endwin();
